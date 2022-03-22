@@ -5,8 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="style.css">
-		
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<main>
@@ -30,27 +29,29 @@
 					</p>
 					<p>You <i>know</i> you want to.</p>
 				</div>
+				<p class="legend">Let's do this!</p>
+
 				<div class="form">
 					<div>
 						<label for="Fname">FIRST NAME</label>
 						<input type="text" name="Fname" />
 						<p class="check">Must fill this field</p>
 
-						<label for="Lname">LAST NAME</label>
-						<input type="text" name="Lname" />
-						<p class="check">Must fill this field</p>
-
-						<label for="phone">PHONE NUMBER</label>
-						<input type="text" name="phone" />
-						<p class="check">Must fill this field</p>
-					</div>
-					<div>
 						<label for="email">EMAIL</label>
 						<input type="text" name="email" />
 						<p class="check">Must fill this field</p>
 
 						<label for="pw">PASSWORD</label>
 						<input type="text" name="pw" />
+						<p class="check">Must fill this field</p>
+					</div>
+					<div>
+						<label for="Lname">LAST NAME</label>
+						<input type="text" name="Lname" />
+						<p class="check">Must fill this field</p>
+
+						<label for="phone">PHONE NUMBER</label>
+						<input type="text" name="phone" />
 						<p class="check">Must fill this field</p>
 
 						<label for="cpw">CONFIRM PASSWORD</label>
@@ -59,10 +60,19 @@
 					</div>
 				</div>
 				<div class="footer">
-					<input type="button" value="SUBMIT" onclick="console.log('123')"/>
+					<input
+						type="button"
+						value="Create Account"
+						onclick="showError()"
+					/>
+					<p class="signIn">
+						already have a account?
+						<a href="">Sign in here</a>
+					</p>
 				</div>
 			</div>
 		</main>
 	</body>
+	<script src="script.js"></script>
 	<!-- Chad Montano @briewilly -->
 </html>

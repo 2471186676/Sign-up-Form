@@ -99,6 +99,12 @@ main {
 	font-size: 1.5rem;
 }
 
+.legend{
+	font-size: 1.5rem;
+	margin: 1.5rem 0 0 2rem;
+	font-weight: bold;
+}
+
 .form{
 	height: 30vh;
 
@@ -117,6 +123,15 @@ main {
 	flex-grow: 1;
 }
 
+.form input{
+	border: none;
+	border-radius: 5px;
+}
+
+.form input:focus{
+	outline: rgb(97, 62, 252) solid 3px;
+}
+
 .check{
 	visibility:hidden;
 	margin-top: 1px;
@@ -125,7 +140,7 @@ main {
 }
 
 .footer{
-	height:  30vh;
+	height: 30vh;
 	background-color: var(--main-backGround-color-lighter);
 }
 
@@ -138,16 +153,25 @@ main {
 
 	font-weight: bold;
 	color: rgb(255, 255, 255);
-	text-shadow: 2px 2px 0px rgb(63, 63, 63);
+	text-shadow: 1px 1px 1px rgb(63, 63, 63);
 
 	width: 15vw;
 	height: 5vh;
 }
 
 .footer input:hover{
-	background-color: rgba(60, 50, 107, 0.6);
-	border: 3px solid rgb(109, 109, 109);
+	background-color: rgba(44, 36, 77, 0.6);
 	box-shadow: none;
+}
+
+.footer .signIn{
+	margin: 0 0 0 1.5rem;
+	color: rgb(177, 177, 177);
+}
+
+.signIn a{
+	text-decoration: none;
+	color: rgb(180, 129, 180);
 }
 
 
