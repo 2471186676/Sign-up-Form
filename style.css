@@ -1,0 +1,154 @@
+@font-face {
+	font-family: "brunchy";
+	src: url("./Brunch\ Brunch.otf");
+}
+:root{
+	--main-backGround-color:rgb(245, 211, 118);
+	--main-backGround-color-lighter:rgb(243, 227, 182);
+
+	font-family: 'Poppins', sans-serif;;
+}
+
+
+body {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+}
+
+.leftSide {
+	position: relative;
+
+	margin: 0;
+	padding: 0;
+	margin-left: -10px;
+
+	width: 40vw;
+	height: 110vh;
+	overflow: hidden;
+}
+
+.backGround_pic {
+	background-image: url("./panCake.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	height: 100vh;
+}
+
+.logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	margin-top: 20vh;
+
+	width: inherit;
+	height: 10rem;
+
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logoImg {
+	width: 100px;
+}
+
+.logoItem{
+	display: flex;
+
+	width: inherit;
+	height: inherit;
+
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.logoName {
+	font-family: brunchy;
+	font-size: 100px;
+	color: whitesmoke;
+
+	font-size: 100px;
+	line-height: 1.2;
+	letter-spacing: 0.083em;
+	font-weight: 500;
+}
+
+.rightSide {
+	background-color: var(--main-backGround-color);
+	width: 70vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.textField{
+	height: 40vh;
+	padding: 5rem 1rem 1rem 1rem;
+
+	background-color: var(--main-backGround-color-lighter);
+	font-weight:700;
+	font-size: 1.5rem;
+}
+
+.form{
+	height: 30vh;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+
+	margin: 1rem;
+}
+
+.form div{
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+	flex-grow: 1;
+}
+
+.check{
+	visibility:hidden;
+	margin-top: 1px;
+	font-size: 0.7rem;
+	color: red;
+}
+
+.footer{
+	height:  30vh;
+	background-color: var(--main-backGround-color-lighter);
+}
+
+.footer input{
+	margin: 20px;
+
+	border: none;
+	background-color: rgba(60, 50, 107, 0.5);
+	border-radius: 10px;
+
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 2px 0px rgb(63, 63, 63);
+
+	width: 15vw;
+	height: 5vh;
+}
+
+.footer input:hover{
+	background-color: rgba(60, 50, 107, 0.6);
+	border: 3px solid rgb(109, 109, 109);
+	box-shadow: none;
+}
+
+
+
